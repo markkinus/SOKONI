@@ -14,11 +14,11 @@
             <input type="search" placeholder="search products...">
             <button type="submit"> <i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
-        <button type="button" aria label="Shopping cart">
+        <button type="button" class="cart-button" label="Shopping cart">
             <i class="fa-solid fa-cart-shopping"></i>
         </button>
     </header>
-        <nav>
+        <nav id="navigation">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Electronics</a></li>
@@ -30,9 +30,142 @@
         </nav>
         <section id="hero">
             <h2>Discover. Shop. Enjoy</h2>
-            <p>Explore a wide range of quality products at unbeatable prices, all in one convenient location. Shop with confidence and enjoy a seamless shopping experience at Sokoni</p>
+            <p>Explore a wide range of quality products at unbeatable prices, all in one convenient location. <br>Shop with confidence and enjoy a seamless shopping experience at Sokoni</p>
             <button type="button">SHOP SOKONI</button>
         </section>
-
+        <main id="main">
+            <aside id="filters">
+            <h2>Filters</h2>
+            <section class="filter-group">
+                <h3>Category</h3>
+                <label>
+                    <input type="checkbox" name="Electronics">
+                    Electronics
+                </label>
+                <label>
+                    <input type="checkbox" name="Fashion">
+                    Fashion
+                </label>
+                <label>
+                    <input type="checkbox" name="Books">
+                    Books
+                </label>
+                <label>
+                    <input type="checkbox" name="Home goods">
+                    Home Goods
+                </label>
+            </section>
+            <section class="filter-group">
+                <h3>Price</h3>
+                <label>
+                    <input type="radio" name="price" value="under 1000">
+                    under KSH 1,000
+                </label>
+                <label>
+                    <input type="radio" name="price" value="KSH 1,000 - KSH 20,000">
+                    KSH 1,000 - KSH 20,000
+                </label>
+                <label>
+                    <input type="radio" name="price" value="KSH 20,000+">
+                    KSH 20,000+
+                </label>
+            </section>
+            <section class="filter-group">
+                <h3>Rating</h3>
+                <label>
+                    <input type="radio" name="rating" value="4">
+                    4 or above
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="3">
+                    3 or above
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="2">
+                    2 or above
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="1">
+                    1 or above
+                </label>
+            </section>
+        </aside>
+        <section id="products">
+            <div class="sort">
+                <label for="sort">Sort by:</label>
+                <select name="sort" id="sort">
+                    <option value="Featured">Featured</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="rating">Highest Rated</option>
+                    <option value="newest">Newest</option>
+                </select>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="images/smartphone-image.jpg" alt="smartphone">
+                    <h3>Smartphone</h3>
+                    <p>Price: KSH 25,999</p>
+                    <p>Rating: 4.5</p>
+                    <button type="button">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/book-image.jpg" alt="book">
+                <h3>Book</h3>
+                <p>Price: KSH 1,645</p>
+                <p>Rating: 4</p>
+                <button type="button">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/gown-image.jpg" alt="gown">
+                <h3>Wedding Gown</h3>
+                <p>Price: KSH 37,800</p>
+                <p>Rating: 4</p>
+                <button type="button">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/gym-bag-image.jpg" alt="gym bag">
+                <h3>Gym bag</h3>
+                <p>Price: KSH 1,300</p>
+                <p>Rating: 4</p>
+                <button type="button">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/headphone-image.jpg" alt="headphone">
+                <h3>Headphone</h3>
+                <p>Price: KSH 3,700</p>
+                <p>Rating: 4</p>
+                <button type="button">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/microwave-image.jpg" alt="microwave">
+                <h3>Microwave</h3>
+                <p>Price: KSH 6,500</p>
+                <p>Rating: 4</p>
+                <button type="button">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/sneakers-image.jpg" alt="sneakers">
+                <h3>Sneakers</h3>
+                <p>Price: KSH 33,000</p>
+                <p>Rating: 4</p>
+                <button type="button">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/novel-image.jpg" alt="novel">
+                <h3>Novel</h3>
+                <p>Price: KSH 2,350</p>
+                <p>Rating: 4.6</p>
+                <button type="button">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/fridge-image.jpg" alt="fridge">
+                <h3>Fridge</h3>
+                <p>Price: KSH 77,000</p>
+                <p>Rating: 4.7</p>
+                <button type="button">Add to Cart</button>
+            </div>
+            </section>
+        </main>
     </body>
 </html>
