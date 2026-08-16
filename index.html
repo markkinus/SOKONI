@@ -14,9 +14,9 @@
             <input type="search" placeholder="search products...">
             <button type="submit"> <i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
-        <button type="button" class="cart-button" label="Shopping cart">
-            <i class="fa-solid fa-cart-shopping"></i>
-        </button>
+        <a href="#cart-sidebar" class="cart-button" aria-label="Shopping cart">
+    <i class="fa-solid fa-cart-shopping"></i>
+</a>
     </header>
         <nav id="navigation">
             <ul>
@@ -102,70 +102,350 @@
                 </select>
             </div>
             <div class="product-grid">
-                <div class="product-card">
-                    <img src="images/smartphone-image.jpg" alt="smartphone">
-                    <h3>Smartphone</h3>
-                    <p>Price: KSH 25,999</p>
-                    <p>Rating: 4.5</p>
-                    <button type="button">Add to Cart</button>
+            <div class="product-card">
+                <img src="images/smartphone-image.jpg" alt="smartphone">
+                <h3>Smartphone</h3>
+                <p class="price">KSH 25,999</p>
+                <div class="rating-stars" aria-label="4.5 out of 5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#smartphone-modal" class="view-product">View Details</a>
+                <button type="button" class="add-cart">Add to Cart</button>
             </div>
             <div class="product-card">
                 <img src="images/book-image.jpg" alt="book">
                 <h3>Book</h3>
-                <p>Price: KSH 1,645</p>
-                <p>Rating: 4</p>
-                <button type="button">Add to Cart</button>
+                <p class="price">KSH 1,645</p>
+                <div class="rating-stars" aria-label="4 out of 5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <a href="#book-modal" class="view-product">View Details</a>
+                <button type="button" class="add-cart">Add to Cart</button>
             </div>
             <div class="product-card">
                 <img src="images/gown-image.jpg" alt="gown">
                 <h3>Wedding Gown</h3>
-                <p>Price: KSH 37,800</p>
-                <p>Rating: 4</p>
-                <button type="button">Add to Cart</button>
+                <p class="price">KSH 37,800</p>
+                <div class="rating-stars" aria-label="4 out of 5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <a href="#wedding-gown-modal" class="view-product">View Details</a>
+                <button type="button" class="add-cart">Add to Cart</button>
             </div>
             <div class="product-card">
                 <img src="images/gym-bag-image.jpg" alt="gym bag">
                 <h3>Gym bag</h3>
-                <p>Price: KSH 1,300</p>
-                <p>Rating: 4</p>
-                <button type="button">Add to Cart</button>
+                <p class="price">KSH 1,300</p>
+                <div class="rating-stars" aria-label="4 out of 5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <a href="#gym-bag-modal" class="view-product">View Details</a>
+                <button type="button" class="add-cart">Add to Cart</button>
             </div>
             <div class="product-card">
                 <img src="images/headphone-image.jpg" alt="headphone">
                 <h3>Headphone</h3>
-                <p>Price: KSH 3,700</p>
-                <p>Rating: 4</p>
-                <button type="button">Add to Cart</button>
+                <p class="price">KSH 3,700</p>
+                <div class="rating-stars" aria-label="4 out of 5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <a href="#headphone-modal" class="view-product">View Details</a>
+                <button type="button" class="add-cart">Add to Cart</button>
             </div>
             <div class="product-card">
                 <img src="images/microwave-image.jpg" alt="microwave">
                 <h3>Microwave</h3>
-                <p>Price: KSH 6,500</p>
-                <p>Rating: 4</p>
-                <button type="button">Add to Cart</button>
+                <p class="price">KSH 6,500</p>
+                <div class="rating-stars" aria-label="4 out of 5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <a href="#microwave-modal" class="view-product">View Details</a>
+                <button type="button" class="add-cart">Add to Cart</button>
             </div>
             <div class="product-card">
                 <img src="images/sneakers-image.jpg" alt="sneakers">
                 <h3>Sneakers</h3>
-                <p>Price: KSH 33,000</p>
-                <p>Rating: 4</p>
-                <button type="button">Add to Cart</button>
+                <p class="price">KSH 3,500</p>
+                <div class="rating-stars" aria-label="4 out of 5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <a href="#sneakers-modal" class="view-product">View Details</a>
+                <button type="button" class="add-cart">Add to Cart</button>
             </div>
             <div class="product-card">
                 <img src="images/novel-image.jpg" alt="novel">
                 <h3>Novel</h3>
-                <p>Price: KSH 2,350</p>
-                <p>Rating: 4.6</p>
-                <button type="button">Add to Cart</button>
+                <p class="price">KSH 2,350</p>
+                <div class="rating-stars" aria-label="4 out of 5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <a href="#novel-modal" class="view-product">View Details</a>
+                <button type="button" class="add-cart">Add to Cart</button>
             </div>
             <div class="product-card">
                 <img src="images/fridge-image.jpg" alt="fridge">
                 <h3>Fridge</h3>
-                <p>Price: KSH 77,000</p>
-                <p>Rating: 4.7</p>
-                <button type="button">Add to Cart</button>
+                <p class="price">KSH 77,000</p>
+                <div class="rating-stars" aria-label="4.7 out of 5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#fridge-modal" class="view-product">View Details</a>
+                <button type="button" class="add-cart">Add to Cart</button>
             </div>
             </section>
         </main>
+        <section id="smartphone-modal" class="product-modal">
+            <div class="product-modal-content">
+                <a href="#" class="close-modal">&times;</a>
+                <img src="images/smartphone-image.jpg" alt="smartphone">
+                <div class="product-details">
+                <h3>Smartphone</h3>
+                <p class="price">KSH 25,999</p>
+                <div class="rating-stars" aria-label="4.5 out of 5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>Experience a high end smartphone with a clear and sleek design</p>
+                <a href="#cart-sidebar" class="cart-button">Add to Cart</a>
+            </div>
+            </div>
+        </section>
+        <section id="book-modal" class="product-modal">
+            <div class="product-modal-content">
+                <a href="#" class="close-modal">&times;</a>
+                <img src="images/book-image.jpg" alt="book">
+                <div class="product-details">
+                <h3>Book</h3>
+                <p class="price">KSH 1,645</p>
+                <div class="rating-stars" aria-label="4 out of 5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Discover a world of knowledge with this classic book</p>
+                <a href="#cart-sidebar" class="cart-button">Add to Cart</a>
+            </div>
+            </div>
+        </section>
+        <section id="wedding-gown-modal" class="product-modal">
+            <div class="product-modal-content">
+                <a href="#" class="close-modal">&times;</a>
+                <img src="images/gown-image.jpg" alt="gown">
+                <div class="product-details">
+                <h3>Wedding Gown</h3>
+                <p class="price">KSH 37,800</p>
+                <div class="rating-stars" aria-label="4 out of 5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Embrace elegance and sophistication with this stunning wedding gown</p>
+                <a href="#cart-sidebar" class="cart-button">Add to Cart</a>
+            </div>
+            </div>
+        </section>
+        <section id="gym-bag-modal" class="product-modal">
+            <div class="product-modal-content">
+                <a href="#" class="close-modal">&times;</a>
+                <img src="images/gym-bag-image.jpg" alt="gym bag">
+                <div class="product-details">
+                <h3>Gym Bag</h3>
+                <p class="price">KSH 1,300</p>
+                <div class="rating-stars" aria-label="4 out of 5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Stay organized and stylish with this gym bag</p>
+                <a href="#cart-sidebar" class="cart-button">Add to Cart</a>
+            </div>
+            </div>
+        </section>
+        <section id="headphone-modal" class="product-modal">
+            <div class="product-modal-content">
+                <a href="#" class="close-modal">&times;</a>
+                <img src="images/headphone-image.jpg" alt="headphone">
+                <div class="product-details">
+                <h3>Headphone</h3>
+                <p class="price">KSH 3,700</p>
+                <div class="rating-stars" aria-label="4 out of 5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Experience high quality sound with this headphone</p>
+                <a href="#cart-sidebar" class="cart-button">Add to Cart</a>
+            </div>
+            </div>
+        </section>
+        <section id="microwave-modal" class="product-modal">
+            <div class="product-modal-content">
+                <a href="#" class="close-modal">&times;</a>
+                <img src="images/microwave-image.jpg" alt="microwave">
+                <div class="product-details">
+                <h3>Microwave</h3>
+                <p class="price">KSH 6,500</p>
+                <div class="rating-stars" aria-label="4 out of 5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Experience convenience with this microwave</p>
+                <a href="#cart-sidebar" class="cart-button">Add to Cart</a>
+            </div>
+            </div>
+        </section>
+        <section id="sneakers-modal" class="product-modal">
+            <div class="product-modal-content">
+                <a href="#" class="close-modal">&times;</a>
+                <img src="images/sneakers-image.jpg" alt="sneakers">
+                <div class="product-details">
+                <h3>Sneakers</h3>
+                <p class="price">KSH 3,500</p>
+                <div class="rating-stars" aria-label="4 out of 5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Step into style with these sneakers</p>
+                <a href="#cart-sidebar" class="cart-button">Add to Cart</a>
+            </div>
+            </div>
+        </section>
+        <section id="novel-modal" class="product-modal">
+            <div class="product-modal-content">
+                <a href="#" class="close-modal">&times;</a>
+                <img src="images/novel-image.jpg" alt="novel">
+                <div class="product-details">
+                <h3>Novel</h3>
+                <p class="price">KSH 2,350</p>
+                <div class="rating-stars" aria-label="4 out of 5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Discover a world of stories with this novel</p>
+                <a href="#cart-sidebar" class="cart-button">Add to Cart</a>
+            </div>
+            </div>
+        </section>
+        <section id="fridge-modal" class="product-modal">
+            <div class="product-modal-content">
+                <a href="#" class="close-modal">&times;</a>
+                <img src="images/fridge-image.jpg" alt="fridge">
+                <div class="product-details">
+                <h3>Fridge</h3>
+                <p class="price">KSH 77,000</p>
+                <div class="rating-stars" aria-label="4.7 out of 5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>Keep your food fresh and cool with this fridge</p>
+                <a href="#cart-sidebar" class="cart-button">Add to Cart</a>
+            </div>
+            </div>
+        </section>
+        <section id="cart-sidebar" class="cart-sidebar">
+
+    <div class="cart-header">
+        <h2>Shopping Cart</h2>
+        <a href="#" class="close-cart">&times;</a>
+    </div>
+
+    <div class="cart-item">
+        <img src="images/smartphone-image.jpg" alt="Smartphone">
+
+        <div class="cart-item-details">
+            <h3>Smartphone</h3>
+            <p class="price">KSH 25,999</p>
+            <p>Quantity: 1</p>
+        </div>
+    </div>
+
+    <div class="cart-item">
+        <img src="images/book-image.jpg" alt="Book">
+
+        <div class="cart-item-details">
+            <h3>Book</h3>
+            <p class="price">KSH 1,645</p>
+            <p>Quantity: 1</p>
+        </div>
+    </div>
+
+    <div class="cart-item">
+        <img src="images/gym-bag-image.jpg" alt="Gym Bag">
+
+        <div class="cart-item-details">
+            <h3>Gym Bag</h3>
+            <p class="price">KSH 1,300</p>
+            <p>Quantity: 1</p>
+        </div>
+    </div>
+
+    <div class="cart-total">
+        <strong>Total: KSH 28,944</strong>
+    </div>
+
+    <button type="button" class="checkout-button">
+        Checkout
+    </button>
+
+</section>
     </body>
 </html>
