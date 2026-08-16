@@ -15,3 +15,27 @@ The SOKONI website was optimized by keeping the HTML structure simple and organi
 Product images use fixed dimensions and `object-fit: contain` to maintain consistent display without distortion.
 
 CSS Grid and Flexbox are used for efficient layouts, while JavaScript was avoided because the filter, sorting, modal, and cart features are static UI requirements.
+
+## CSS Architecture Documentation
+
+The SOKONI website uses a simple component-based CSS structure to keep the styling organized and easy to maintain.
+
+The `style.css` file is organized into sections covering:
+
+* Global reset styles
+* Header and search bar
+* Navigation
+* Hero section
+* Main layout
+* Filter sidebar and sorting
+* Product grid and product cards
+* Product detail modals
+* Cart sidebar
+* Hover effects and transitions
+* Responsive styling
+
+CSS Grid is used for the main layout and product grid, while Flexbox is used for elements such as the header, navigation, filters, and cart components.
+
+Reusable class selectors such as `.product-card`, `.filter-group`, `.cart-button`, and `.product-details`, and `.footer-section` are used to avoid repeating the same styling.
+
+The project keeps the HTML structure separate from the CSS styling, making the website easier to update and maintain.
