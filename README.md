@@ -100,3 +100,7 @@ The main reusable components include:
 ### Interactive States
 
 Buttons, navigation links, product cards, and the cart icon include hover effects and transitions to provide visual feedback when users interact with the interface.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
