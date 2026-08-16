@@ -51,3 +51,52 @@ The audit measured the website's loading performance and identified areas that c
 The project was kept lightweight by using simple HTML and CSS, avoiding unnecessary JavaScript, using CSS Grid and Flexbox for layouts, and keeping the page structure straightforward.
 
 The Lighthouse audit was used to identify possible performance improvements and verify the overall loading performance of the website.
+
+## Design System Documentation
+
+The SOKONI design system uses a consistent color palette, typography, spacing, and component styling throughout the website.
+
+### Colors
+
+* **Dark Blue:** `#172554` — header and main headings
+* **Blue:** `#2563eb` — navigation and primary buttons
+* **Dark Blue Hover:** `#1d4ed8` — button hover states
+* **Orange:** `#f59e0b` — hero CTA and rating stars
+* **Light Background:** `#f8fafc` — page sections and product cards
+* **Dark Text:** `#1e293b` — headings and main text
+* **Muted Text:** `#475569` — secondary text
+* **Border:** `#e2e8f0` — borders and separators
+* **White:** `#ffffff` — backgrounds and text on dark sections
+
+### Typography
+
+The website uses a simple typography hierarchy:
+
+* **H1** — SOKONI brand name
+* **H2** — major section headings
+* **H3** — product and subsection headings
+* **Paragraphs** — supporting information and descriptions
+
+The hero heading uses Georgia as a decorative font, while the rest of the website uses the browser's default font.
+
+### Spacing
+
+The design uses consistent spacing through padding, margins, and gaps. Common spacing values include `10px`, `15px`, `20px`, `25px`, `30px`, `40px`, and `50px`.
+
+### Components
+
+The main reusable components include:
+
+* Header and search bar
+* Navigation menu
+* Hero section
+* Filter sidebar
+* Sort dropdown
+* Product cards
+* Product detail modals
+* Cart sidebar
+* Footer
+
+### Interactive States
+
+Buttons, navigation links, product cards, and the cart icon include hover effects and transitions to provide visual feedback when users interact with the interface.
