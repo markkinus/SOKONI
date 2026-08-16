@@ -7,3 +7,11 @@ The main website features were checked to ensure they displayed and behaved corr
 All tested features worked as expected, and no major browser-specific compatibility issues were identified.
 
 The website uses standard HTML5 and CSS3 features such as CSS Grid, Flexbox, CSS transitions, CSS animations, and the `:target` pseudo-class. These features displayed correctly in the tested browsers.
+
+## Performance Optimization
+
+The SOKONI website was optimized by keeping the HTML structure simple and organizing the CSS into reusable sections for the header, navigation, hero, filters, products, modals, and cart.
+
+Product images use fixed dimensions and `object-fit: contain` to maintain consistent display without distortion.
+
+CSS Grid and Flexbox are used for efficient layouts, while JavaScript was avoided because the filter, sorting, modal, and cart features are static UI requirements.
