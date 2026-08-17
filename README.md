@@ -2,11 +2,12 @@
 
 The SOKONI website was tested using the live version of the project in multiple modern web browsers, including Google Chrome and Microsoft Edge.
 
-The main website features were checked to ensure they displayed and behaved correctly across the tested browsers. These included the header and navigation, hero section, search bar, filter sidebar, sorting dropdown, product grid, product cards, hover effects, product detail modals, cart sidebar, buttons, and links.
+The main website features were checked to ensure they displayed and behaved correctly across the tested browsers. These included the header and navigation, hero section, search bar, filter sidebar, sorting dropdown, product grid, product cards, hover effects, product detail modals, cart sidebar, buttons, and links. The responsive layout was tested at different screen sizes to ensure the shopping experience adapts correctly on tablets and mobile devices.
 
 All tested features worked as expected, and no major browser-specific compatibility issues were identified.
 
 The website uses standard HTML5 and CSS3 features such as CSS Grid, Flexbox, CSS transitions, CSS animations, and the `:target` pseudo-class. These features displayed correctly in the tested browsers.
+
 
 ## Performance Optimization
 
@@ -34,7 +35,7 @@ The `style.css` file is organized into sections covering:
 * Hover effects and transitions
 * Responsive styling
 
-CSS Grid is used for the main layout and product grid, while Flexbox is used for elements such as the header, navigation, filters, and cart components.
+CSS Grid is used for the main layout and product grid, while Flexbox is used for elements such as the header, navigation, filters, cart components, and footer.
 
 Reusable class selectors such as `.product-card`, `.filter-group`, `.cart-button`, and `.product-details`, and `.footer-section` are used to avoid repeating the same styling.
 
