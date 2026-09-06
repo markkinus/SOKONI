@@ -31,6 +31,6 @@ for(let i = 0; i < 5; i++){
 }
 
 // event listener for the submit button
-document.getElementById("submitBtn").addEventListener("click", function() {
+document.getElementById("btn").addEventListener("click", function() {
     console.log("Welcome to Sokoni!");
 });
