@@ -17,7 +17,8 @@ function calculateAgeInMonths(age) {
     return age * 12;
 }
 
-// check if the user is an adult or a minor
+/* CONDITIONAL
+ check if the user is an adult or a minor */
 if (age >=18){
     console.log("You can access adult content on Sokoni");
 } else{
@@ -28,3 +29,8 @@ if (age >=18){
 for(let i = 0; i < 5; i++){
     console.log("Keep going! You're almost there!");
 }
+
+// event listener for the submit button
+document.getElementById("submitBtn").addEventListener("click", function() {
+    console.log("Welcome to Sokoni!");
+});
