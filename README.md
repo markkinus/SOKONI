@@ -15,7 +15,23 @@ The SOKONI website was optimized by keeping the HTML structure simple and organi
 
 Product images use fixed dimensions and `object-fit: contain` to maintain consistent display without distortion.
 
-CSS Grid and Flexbox are used for efficient layouts, while JavaScript was avoided because the filter, sorting, modal, and cart features are static UI requirements.
+CSS Grid and Flexbox are used for efficient layouts. JavaScript is used for basic user interaction and functionality, while the filter, sorting, modal, and cart features remain primarily static UI requirements.
+
+## JavaScript Functionality
+
+JavaScript was added to the SOKONI website to introduce basic interactivity and demonstrate fundamental JavaScript concepts.
+
+The JavaScript functionality includes:
+
+* Variables for storing the user's name and age
+* A function for calculating the user's age in months
+* Conditional statements to determine whether the user is an adult or a minor
+* A `for` loop to display a motivational message multiple times
+* An event listener using `addEventListener()` to respond to user interactions
+* Console output for displaying information and testing JavaScript functionality
+
+The JavaScript code is stored separately in `script.js` and is linked to the HTML document using a `<script>` element.
+
 
 ## CSS Architecture Documentation
 
@@ -39,7 +55,7 @@ CSS Grid is used for the main layout and product grid, while Flexbox is used for
 
 Reusable class selectors such as `.product-card`, `.filter-group`, `.cart-button`, and `.product-details`, and `.footer-section` are used to avoid repeating the same styling.
 
-The project keeps the HTML structure separate from the CSS styling, making the website easier to update and maintain.
+The project keeps the HTML structure, CSS styling, and JavaScript functionality in separate files, making the website easier to update and maintain.
 
 ## Lighthouse Performance Audit
 
@@ -49,7 +65,7 @@ The audit measured the website's loading performance and identified areas that c
 
 **Performance Score: 55/100**
 
-The project was kept lightweight by using simple HTML and CSS, avoiding unnecessary JavaScript, using CSS Grid and Flexbox for layouts, and keeping the page structure straightforward.
+The project was kept lightweight by using simple HTML and CSS, with JavaScript limited to basic functionality and user interaction.
 
 The Lighthouse audit was used to identify possible performance improvements and verify the overall loading performance of the website.
 
