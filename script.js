@@ -16,6 +16,7 @@ console.log(months);
 function calculateAgeInMonths(age) {
     return age * 12;
 }
+console.log(calculateAgeInMonths(25));
 
 /* CONDITIONAL
  check if the user is an adult or a minor */
