@@ -25,6 +25,14 @@ if (age >=18){
     console.log("You are too young for adult content on Sokoni");
 }
 
+//create a function to display a personalized greeting using template literals
+
+function greetings(name) {
+    console.log(`Hello, ${name}! Welcome to Sokoni!`);
+}
+greetings("John Doe");
+
+
 //loop to display a motivational message 5 times
 for(let i = 0; i < 5; i++){
     console.log("Keep going! You're almost there!");
